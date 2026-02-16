@@ -11,9 +11,9 @@ export const INITIAL_NOTES = [
 export const DEFAULT_DENOMINATIONS: Denomination[] = [
   { text: "10.000 đ", amount: 10000 },
   { text: "20.000 đ", amount: 20000 },
-  { text: "50.000 đ", amount: 50000 },
   { text: "30.000 đ", amount: 30000 },
   { text: "40.000 đ", amount: 40000 },
+  { text: "50.000 đ", amount: 50000 },
   { text: "100.000 đ", amount: 100000 },
   { text: "Lộc Xuân 2026", amount: 200000 },
   { text: "Lộc Phát", amount: 100000 },
@@ -27,7 +27,7 @@ export const generateGameCards = (
   const cards: GameCard[] = [];
   const activePool = pool.length > 0 ? pool : DEFAULT_DENOMINATIONS;
 
-  for (let i = 0; i < 35; i++) {
+  for (let i = 0; i < 28; i++) {
     const randomVal = activePool[Math.floor(Math.random() * activePool.length)];
     cards.push({
       id: i,
