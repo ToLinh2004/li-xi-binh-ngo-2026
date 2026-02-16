@@ -43,7 +43,7 @@ const App: React.FC = () => {
 
   useEffect(() => {
     audioRef.current = new Audio(
-      "./music-lunar-new-year.mp3",
+      "/music-lunar-new-year.mp3",
     );
     audioRef.current.loop = true;
     audioRef.current.volume = 0.4;
